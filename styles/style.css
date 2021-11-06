@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --hero-footer-background-color: #1F2937;
+    --hero-text-color: #F9FAF8;
+    --hero-font-size: 48px;
+    --hero-font-weight: bolder;
+    --hero-secondary-header-link-text-color: #E5E7EB;
+    --hero-secondary-header-link-font-size: 18px;
+    --header-logo-text-color: #F9FAF8;
+    --header-logo-font-size: 24px;
+
+    --Button-CallToAction-backgroundColor: #3882F6;
+    --information-header-text-color: #1F2937;
+    --information-header-font-size: 36px;
+    --information-header-font-weight: bolder;
+
+    --quote-background-color: #E5E7EB;
+    --quote-text-color: #1F2937;
+    --quote-font-size: 36px;
+    --quote-font-weight: lighter;
+    --quote-font-style: italic;
+}
+
+html {
+    background-color: black;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    
+}
+
+header, .hero-section,.information-section,.quote-section,.call-to-action-section, footer {
+    padding: 0 10%;
+}
+
+
+header, .hero-section, footer {
+    background-color: var(--hero-footer-background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.subtext, header li a{
+    color: var(--hero-secondary-header-link-text-color);
+    font-size: var(--hero-secondary-header-link-font-size);
+    text-decoration: none;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header a:hover {
+    color: var(--Button-CallToAction-backgroundColor)
+}
+
+.logo {
+    color: var(--header-logo-text-color);
+    font-size: var(--header-logo-font-size);
+    font-weight: bolder;
+}
+
+.hero-section h1 {
+    color: var(--hero-text-color);
+    font-weight: var(--hero-font-weight);
+    font-size: var(--hero-font-size);
+}
+
+.hero-section button {
+    background-color: var(--Button-CallToAction-backgroundColor);
+    color: var(--header-logo-text-color);
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+    border: none;
+}
+
+.hero-section button:hover {
+    color: var(--Button-CallToAction-backgroundColor);
+    background-color: var(--header-logo-text-color)
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 20px;
+}
+
+.hero-section .left {
+    width: 50%;
+}
+
+.hero-section .right {
+    width: 50%;
+    height: 300px;
+    color: var(--hero-secondary-header-link-text-color);
+    text-align: center;
+    line-height: 200px;
+}
+
+.hero-section img {
+    height: 100%;
+}
+
+.information-section {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.information-section h2 {
+    color: var(--information-header-text-color);
+    font-size: var(--information-header-font-size);
+    font-weight: var(--information-header-font-weight);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+}
+
+.item img {
+    border: 2px solid var(--Button-CallToAction-backgroundColor);
+    border-radius: 5px;
+    width: 110px;
+    height: 110px;
+}
+
+.quote-section {
+    background-color: var(--quote-background-color);
+    padding: 80px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+blockquote {
+    color: var(--quote-text-color);
+    font-size: var(--quote-font-size);
+    font-weight: var(--quote-font-weight);
+    font-style: var(--quote-font-style);
+    opacity: 0.8;
+    text-align: center;
+}
+
+figcaption {
+    color: var(--hero-footer-background-color);
+    font-size: var(--header-logo-font-size);
+    text-align: right;
+    opacity: 1;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.call-to-action-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.call-to-action-subsection {
+    background-color: var(--Button-CallToAction-backgroundColor);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+    gap: 20px;
+    justify-content: space-evenly;
+    color: var(--header-logo-text-color);
+    height: 150px;
+    
+}
+
+.call-to-action-subsection .left {
+    line-height: 10px;
+}
+
+.call-to-action-subsection p {
+    color: var(--hero-secondary-header-link-text-color)
+}
+
+.call-to-action-subsection button {
+    background-color: var(--Button-CallToAction-backgroundColor);
+    border: 2px solid #E5E7EB;
+    color: var(--header-logo-text-color);
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+}
+
+.call-to-action-subsection button:hover {
+    background-color: var(--header-logo-text-color);
+    color: var(--Button-CallToAction-backgroundColor);
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--hero-secondary-header-link-text-color);
+    text-align: center;
+    font-size: small;
+}
